@@ -40,20 +40,20 @@ There are many configurable features with type.js
 
 1. Typing Speed:
 	To Change Typing Speed The Line:
-		```javascript 
-			var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
-		```
+```javascript 
+	var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
+```
 	Changes to:
-		```javascript 
-			var terminal = new Console({text: shellTextArray, target: $("#shell"), speed:100});
-		```
+```javascript 
+	var terminal = new Console({text: shellTextArray, target: $("#shell"), speed:100});
+```
 	where the numerical value '100' is in milliseconds.
 
 2. Cursor Blink Speed:
 	To Change The  Cursor Blink Speed:
-		```javascript 
-			var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
-		```
+```javascript 
+	var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
+```
 	Changes to:
 		```javascript 
 			var terminal = new Console({text: shellTextArray, target: $("#shell"), cursorBlinkSpeed: 50}); 
