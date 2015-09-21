@@ -20,7 +20,7 @@ Step2: Write a few lines of Javascript!
 
 Just make note of the id assigned to the container element you wish to make a shell. And then setup is as simple as:
 
-<script type="text/javascript">
+<script>
 	//Need jquery to tell us when document is ready (assures) target will be available on the DOM and run time
 	$(document).ready(function (){
 		//A simple javascript array to hold the text that you wish to be typed out. Each set of text in quotes is its own line.
