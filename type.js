@@ -1,6 +1,5 @@
 
 function Console(configuration){
-    var ShellHasStarted = false;
     var TextArrayLength;
     var CurrentLineNumber = 0;
     var LineIdentifiers = [];
@@ -13,6 +12,7 @@ function Console(configuration){
     var cursorColor;
     var currentCursorColor;
     var typeResponseModeEnabled;
+    var animationDone = false;
     //GIANT TODO: CHECK FOR BOUNDS!!
     if(configuration.text !== undefined)
     {
@@ -75,9 +75,10 @@ function Console(configuration){
             var line = text[CurrentLineNumber];
             if(line === undefined){
                 //End the recursion array bounds exceeded, place cursor at bottom.
+                animationDone = true;
                 ResetCursorMoveToNextLine();
                 PlaceCursorOnDom();
-                animationDone = true;
+                
                 return;
             }
             currentLine = line.split('');
@@ -105,7 +106,6 @@ function Console(configuration){
     function BlinkCursor()
     {
         cursorbgColor = getNextCursorColor();
-        console.log(cursorbgColor);
          $("#cursor").animate({backgroundColor:cursorbgColor},{duration:150});
     }
 
@@ -147,7 +147,6 @@ function Console(configuration){
     }
     function SetupAndRun()
     {
-        target.append(">>   ");
         target.css("white-space","nowrap");
         window.setInterval(BlinkCursor, cursorBlinkSpeed);
         AddText();
@@ -157,7 +156,10 @@ function Console(configuration){
     {
         CurrentLineNumber++;
         $("#cursor").remove();
-        target.append("<br />");
+        if(!animationDone)
+        {
+            target.append("<br />");
+        }
     }
 
 
