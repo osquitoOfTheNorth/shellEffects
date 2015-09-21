@@ -9,18 +9,20 @@ Step 1:
 	Add required CDN's.  
 		
 	First include jQuery and jQuery UI libs.
+	```
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> 
-
+	```
 	Then include type.js and type.css cdn's as follows:
+	```
 		<link rel="stylesheet" type="text/css" href="<WebsiteRoot>/<PathToCssFiles>/type.css"></link>
 		<script type="text/javascript" src= "<WebsiteRoot>/<PathToJSFiles>/type.js"></script>
-
+	```
 Step2: Write a few lines of Javascript!
 
 Just make note of the id assigned to the container element you wish to make a shell. And then setup is as simple as:
 
-'''
+```javascript
 	//Need jquery to tell us when document is ready (assures) target will be available on the DOM and run time
 	$(document).ready(function (){
 		//A simple javascript array to hold the text that you wish to be typed out. Each set of text in quotes is its own line.
@@ -30,7 +32,7 @@ Just make note of the id assigned to the container element you wish to make a sh
 		//now run the text being typed animation.
 		terminal.RunConsole();
 	});
-'''
+```
 
 There are many configurable features with type.js
 
