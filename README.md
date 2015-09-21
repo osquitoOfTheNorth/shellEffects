@@ -40,29 +40,45 @@ There are many configurable features with type.js
 
 1. Typing Speed:
 	To Change Typing Speed The Line:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell")}); ```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
+		```
 	Changes to:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell"), speed:100});```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell"), speed:100});
+		```
 	where the numerical value '100' is in milliseconds.
 
 2. Cursor Blink Speed:
 	To Change The  Cursor Blink Speed:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell")}); ```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
+		```
 	Changes to:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell"), cursorBlinkSpeed: 50}); ```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell"), cursorBlinkSpeed: 50}); 
+		```
 	where the numerical value '50' is in milliseconds
 
 3. Cursor Color:
 	To Change The  Cursor Blink Speed:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell")}); ```
+		```javascript
+			var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
+		```
 	Changes to:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell"), cursorColor: "blue"}); ```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell"), cursorColor: "blue"}); 
+		```
 
 4. Text Color:
 	To Change The  Cursor Blink Speed:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell")}); ```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell")}); 
+		```
 	Changes to:
-		```javascript var terminal = new Console({text: shellTextArray, target: $("#shell"), textColor: "red"}); ```
+		```javascript 
+			var terminal = new Console({text: shellTextArray, target: $("#shell"), textColor: "red"}); 
+		```
 
 Of Course all 4 of these features can be used at the same time as well. 
 
